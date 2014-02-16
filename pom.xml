@@ -4,6 +4,12 @@
 	<groupId>yubo-spring-in-depth</groupId>
 	<artifactId>yubo-spring-in-depth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<properties>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+        <spring.framework.version>3.1.0.RELEASE</spring.framework.version>
+        <aspectj.version>1.6.11</aspectj.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -69,5 +75,15 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.8.3</version>
 		</dependency>
+		<dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>                
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
 	</dependencies>
 </project>
